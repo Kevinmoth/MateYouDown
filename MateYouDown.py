@@ -18,7 +18,7 @@ def descargar_audio():
         audio.download(filename=f"{titulo_video}.mp3")
 a
         progress_bar['value'] = 100
-        messagebox.showinfo("Descarga completada!", "El audio descargo correctamente.")
+        messagebox.showinfo("Descarga completada!", "El audio se descargo correctamente!.")
     except Exception as e:
         messagebox.showerror("Error", f"Ocurrió un error!: {e}")
 
@@ -30,7 +30,7 @@ def descargar_video():
         titulo_video = video.title
         video.streams.get_highest_resolution().download(filename=f"{titulo_video}.mp4")
         progress_bar['value'] = 100
-        messagebox.showinfo("Descarga completada", "El video se descargo correctamente.")
+        messagebox.showinfo("Descarga completada", "El video se descargo correctamente!.")
     except Exception as e:
         messagebox.showerror("Error", f"Ocurrió un error: {e}")
 
